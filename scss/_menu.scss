@@ -95,13 +95,17 @@
       border: solid 3px $secondary-color;
     }
   }
-  .nav_item {
+  .nav-item {
     transform: translate3d(6000px, 0, 0);
     @include easeOut;
 
     &.show {
-      //SLide in from the right
+      //Slide in from the right
       transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a {
+      color: $secondary-color;
     }
   }
   .nav-link {
@@ -114,6 +118,10 @@
     color: #fff;
     text-decoration: none;
     @include easeOut;
+
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 
