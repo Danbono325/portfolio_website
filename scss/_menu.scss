@@ -71,7 +71,7 @@
     @include easeOut;
 
     &.show {
-      //SLide in from top
+      //Slide in from top
       transform: translate3d(0, 0, 0);
     }
   }
@@ -90,13 +90,15 @@
     .potrait {
       width: 250px;
       height: 250px;
-      background: url("../dist/img/background.jpg");
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
+      a {
+        background: url("../img/portrait.jpg");
+        border-radius: 50%;
+        border: solid 3px $secondary-color;
+      }
     }
   }
   .nav-item {
-    transform: translate3d(6000px, 0, 0);
+    transform: translate3d(600px, 0, 0);
     @include easeOut;
 
     &.show {
