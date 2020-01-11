@@ -9,6 +9,7 @@
   "author": "Daniel Boniface",
   "license": "ISC",
   "dependencies": {
+    "serialize-javascript": ">=2.1.1",
     "node-sass": "^4.13.0"
   }
 }
