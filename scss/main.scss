@@ -22,13 +22,13 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    //background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
@@ -56,10 +56,10 @@ main {
 
     a {
       padding: 0.4rem;
+      @include easeOut;
 
       &:hover {
         color: $secondary-color;
-        @include easeOut;
       }
     }
   }
@@ -78,14 +78,13 @@ main {
     "bioimage bio bio"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
-}
 
-.bio-image {
-  grid-area: bioimage;
-  margin: auto;
-  border-radius: 50%;
-  border: $secondary-color 3px solid;
-
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
@@ -173,7 +172,7 @@ main {
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
-  color: #000;
+  color: #333;
 }
 
 #main-footer {
